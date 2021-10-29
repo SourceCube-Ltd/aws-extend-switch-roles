@@ -1,13 +1,13 @@
 {
   "name": "aws-extend-switch-roles",
   "version": "2.2.0",
-  "description": "Extend your AWS IAM switching roles by Chrome extension",
+  "description": "Extend your AWS IAM switching roles by Safari extension",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "archive": "npm run build; ./bin/archive.sh",
+    "archive": "npm run build && ./bin/archive.sh",
     "build": "./bin/build.sh",
     "test": "mocha --timeout 10000 test/lib/*.test.js",
     "test_ci": "",
@@ -15,19 +15,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tilfin/aws-extend-switch-roles.git"
+    "url": "git+https://github.com/SourceCube-Ltd/aws-extend-switch-roles.git"
   },
   "author": "Toshimitsu Takahashi (Tilfin Ltd.)",
+  "contributors": [
+    {
+      "name": "Aaron Parker (SourceCube Ltd)",
+      "email": "hello@sourcecube.co.uk"
+    }
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tilfin/aws-extend-switch-roles/issues"
+    "url": "https://github.com/SourceCube-Ltd/aws-extend-switch-roles/issues"
   },
-  "homepage": "https://github.com/tilfin/aws-extend-switch-roles#readme",
+  "homepage": "https://github.com/SourceCube-Ltd/aws-extend-switch-roles#readme",
   "devDependencies": {
-    "chai": "^4.3.0",
-    "mocha": "^8.2.1",
-    "playwright": "^1.8.0",
-    "rollup": "^2.38.5"
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0",
+    "playwright": "^1.16.2",
+    "rollup": "^2.58.3"
   },
   "type": "module"
 }

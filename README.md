@@ -1,27 +1,14 @@
-# Dear early donators and current supporters ![Golden Key](./icons/Icon_48x48_g.png)
-You have a ticket to get the AESR Golden Key code. If you don't have it yet, please contact me.
-
-### for my early donator via PayPal or Bitcoin
-Please check *To those who have donated before* section of **Supporters** in the AESR pop-up menu of your browser.
-
-### for current supporters (GitHub Sponsors)
-Please check **Request for Contact Information** in https://github.com/sponsors/tilfinltd.
-
----
-
 # AWS Extend Switch Roles
 
-[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/jpmkfafbacpgapdghgdpembnojdlgkdl.svg)](https://chrome.google.com/webstore/detail/aws-extend-switch-roles/jpmkfafbacpgapdghgdpembnojdlgkdl?utm_source=github)
-[![Firefox Add-on](https://img.shields.io/amo/v/aws-extend-switch-roles3.svg)](https://addons.mozilla.org/ja/firefox/addon/aws-extend-switch-roles3/)
-[![Edge Add-on](https://img.shields.io/badge/dynamic/json?label=edge%20add-on&prefix=v&query=%24.version&url=https%3A%2F%2Fmicrosoftedge.microsoft.com%2Faddons%2Fgetproductdetailsbycrxid%2Fdcflbohnocoeheondddeoknmgbngijbi)](https://microsoftedge.microsoft.com/addons/detail/aws-extend-switch-roles/dcflbohnocoeheondddeoknmgbngijbi)
+Extend your AWS IAM switching roles by Safari extension on MacOS and iOS.
 
-Extend your AWS IAM switching roles by Chrome extension, Firefox add-on, or Edge add-on
+Original extension by [tilfinltd](https://github.com/tilfinltd/aws-extend-switch-roles) which has been ported by Aaron Parker/Sourcecube Ltd
 
-Switch roll history only stores the last 5 roles (maximum) on the AWS Management Console.
+Switch role history only stores the last 5 roles (maximum) on the AWS Management Console.
 This extension shows a menu of switchable roles that you can configure manually.
 
 - Supports the Sync feature on all sorts of browsers
-- Not support switching between AWS accounts you sign into with AWS SSO or SAML solution providers directly
+- Does not support switching between AWS accounts you sign into with AWS SSO or SAML solution providers directly
 
 ### Development and Distribution Guideline
 
@@ -33,9 +20,7 @@ This extension does not restrict the use of other compatible browsers. The versi
 
 ## Install
 
-- [AWS Extend Switch Roles - Chrome Web Store](https://chrome.google.com/webstore/detail/aws-extend-switch-roles/jpmkfafbacpgapdghgdpembnojdlgkdl?utm_source=github)
-- [AWS Extend Switch Roles :: Add-ons for Firefox](https://addons.mozilla.org/firefox/addon/aws-extend-switch-roles3/)
-- [AWS Extend Switch Roles - Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/aws-extend-switch-roles/dcflbohnocoeheondddeoknmgbngijbi)
+- [AWS Extend Switch Roles - App Store](#) (Link pending)
 
 ## Configuration
 
@@ -165,13 +150,6 @@ The 'Show only matching roles' setting is for use with more sophisticated accoun
 
 - **Config sender extension** allowed by the **ID** can send your switch roles configuration to this extension. **'Configuration storage' forcibly becomes 'Local' when the configuration is received from a config sender.** [See](https://github.com/tilfin/aws-extend-switch-roles/wiki/External-API#config-sender-extension) how to make your config sender extension.
 
-## Supporters
-
-<a href="https://classmethod.jp/" rel="noopener"><img alt="Classmethod, Inc." src="https://aesr.tilfin.com/supporters/img/classmethod.png" width="208" height="90"></a>
-<a href="https://www.doit-intl.com/" rel="noopener"><img alt="Classmethod, Inc." src="https://aesr.tilfin.com/supporters/img/doitintl.png" width="208" height="90"></a>
-
 ## Appearance
 
-![Screen Shot 1](https://github.com/tilfin/aws-extend-switch-roles/blob/images/ScreenShot_1.png)
-
-![Screen Shot 3](https://github.com/tilfin/aws-extend-switch-roles/blob/images/ScreenShot_3_960x600.png)
+![Screen Shot 1](screenshots/Screenshot_1.png)

@@ -54,18 +54,6 @@ window.onload = function() {
     return false;
   }
 
-  document.getElementById('openSupportersLink').onclick = document.getElementById('openSupportMe').onclick = function(e) {
-    chrome.tabs.create({ url: chrome.extension.getURL('supporters.html')}, function(tab){});
-    return false;
-  }
-
-  const hasGoldenKey = localStorage.getItem('hasGoldenKey');
-  const swcnt = localStorage.getItem('switchCount') || 0;
-  if (hasGoldenKey) {
-    document.getElementById('goldenkey').style.display = 'block';
-  } else if (swcnt > MANY_SWITCH_COUNT) {
-    document.getElementById('supportComment').style.display = 'block';
-  }
   main();
 }
 
@@ -74,8 +62,8 @@ function main() {
     .then(tab => {
       const url = new URL(tab.url)
       if (url.host.endsWith('.aws.amazon.com')
-       || url.host.endsWith('.amazonaws-us-gov.com')
-       || url.host.endsWith('.amazonaws.cn')) {
+        || url.host.endsWith('.amazonaws-us-gov.com')
+        || url.host.endsWith('.amazonaws.cn')) {
         executeAction(tab.id, 'loadInfo', {}).then(userInfo => {
           if (userInfo) {
             loadFormList(url, userInfo, tab.id);
